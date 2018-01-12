@@ -1,0 +1,13 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.container{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #ccc;
+}

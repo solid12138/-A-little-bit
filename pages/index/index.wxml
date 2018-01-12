@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class='demo'>
+<!--轮播图  -->
+  <view>
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+    <block wx:for="{{movies}}" wx:for-index="index">  
+      <swiper-item>  
+      <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+      </swiper-item>  
+    </block>  
+    </swiper>
+  </view>
+  <!--标题  -->
+  <view class='title'>点一点</view>
+  <!--底部  -->
+  <view class='module'>
+    <view class='born' bindtap='music'>来听歌</view>
+    <view bindtap='photograph'>拍个照</view>
+    <view bindtap='modalcnt'>看看我</view>
+    <view class='born' bindtap='why'>走一个</view>
+    <view bindtap='action'>变一变</view>
+    <view bindtap='posit'>我在哪</view>
+    <view class='born' bindtap='scan'>扫一扫</view>
+    <view bindtap='shock'>不要点</view>
+    <view bindtap='what'>这是啥</view>
+  </view>
+</view>
